@@ -11,24 +11,56 @@
       content="En esta página estamos aprendiendo los
     fundamentos de HTML con @jonmircha"
     />
+    <style>
+      h2{
+        color: orangered;
+      }
+    </style>
+    <link rel="stylesheet" href="assets/estilos.css">
   </head>
 
   <body>
-    <h2>Aprendiendo HTML</h2>
+    <h2 id="inicio">Aprendiendo HTML</h2>
     <!--Esto es un comentario-->
     <!-- prueba comentario -->
     <p>Hola, escribiendo mi primer documento HTML</p>
     <p>Aprendiendo sobre Diseño Web</p>
+    <h3>Temario del Curso</h3>
+    <!-- ul>li*18>a -->
+    <ul>
+      <li><a href="index.html#encabezados">Encabezados HTML</a></li>
+      <li><a href="index.html#texto-basicos">Etiquetas de texto Básicas</a></li>
+      <li><a href="index.html#texto-semanticos">Etiquetas de Texto Semánticas</a></li>
+      <li><a href="index.html#etiquetas-salto">Etiquetas de Saltos</a></li>
+      <li><a href="index.html#etiquetas-formateo">Etiquetas de formateo</a></li>
+      <li><a href="index.html#etiquetas-semanticas">Etiquetas Semánticas Estructurales</a></li>
+      <li><a href="index.html#etiquetas-bloque-linea">Etiquetas de Bloque vs Linea</a></li>
+      <li><a href="index.html#estilos-css">Estilos CSS en HTML</a></li>
+      <li><a href="index.html#script-html">Scripts en HTML</a></li>
+      <li><a href="index.html#imagenes">Imágenes</a></li>
+      <li><a href="index.html#svg">SVG</a></li>
+      <li><a href="index.html#figuras">Figuras</a></li>
+      <li><a href="index.html#listas-ordenadas">Listas Ordenadas</a></li>
+      <li><a href="index.html#listas-desordenadas">Listas Desordenadas</a></li>
+      <li><a href="index.html#listas-definicion">Listas de Definicion</a></li>
+      <li><a href="index.html#tablas">Tablas</a></li>
+      <li><a href="index.html#enlaces">Enlaces</a></li>
+      <li><a href="index.html#elementos-interactivos">Elementos Interactivos</a></li>
+      <li><a href="index.html#audio-video">Audio y Videos</a></li>
+      <li><a href="index.html#iframes">Iframes</a></li>
+      <li><a href="index.html#formularios">Formularios</a></li>
+    </ul>
     <hr />
-    <h2>Encabezados HTML</h2>
+    <h2 id="encabezados">Encabezados HTML</h2>
     <h1>Encabezado de nivel 1</h1>
     <h2>Encabezado de nivel 1</h2>
     <h3>Encabezado de nivel 1</h3>
     <h4>Encabezado de nivel 1</h4>
     <h5>Encabezado de nivel 1</h5>
     <h6>Encabezado de nivel 1</h6>
+    <a href="index.html#inicio">☝️</a>
     <hr />
-    <h2>Etiquetas de texto Básicas</h2>
+    <h2 id="texto-basicos">Etiquetas de texto Básicas</h2>
     <p>Un párrafo</p>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Delectus iste
@@ -42,16 +74,19 @@
         >letras pequeñas</small
       >
     </p>
+    <a href="index.html#inicio">☝️</a>
     <hr />
-    <h2>Etiquetas de Texto Semánticas</h2>
+    <h2 id="texto-semanticos">Etiquetas de Texto Semánticas</h2>
     <p>
       <strong>Este texto es importante</strong>,
       <em>Este texto hace énfasis</em>
     </p>
     <blockquote>Yo sólo sé, que no se nada</blockquote>
     <cite>Sócrates</cite>
+    <br>
+    <a href="index.html#inicio">☝️</a>
     <hr />
-    <h2>Etiquetas de Saltos</h2>
+    <h2 id="etiquetas-salto">Etiquetas de Saltos</h2>
     <p>
       Lorem ipsum dolor sit amet consectetur adipisicing elite. <br />
       Cupiditate, nulla odit excepturi maxime eaque enim in nisi aut vero
@@ -59,8 +94,9 @@
       incidunt optio?<br />
       Beatae, obcaecati.
     </p>
+    <a href="index.html#inicio">☝️</a>
     <hr />
-    <h2>Etiquetas de Formateo</h2>
+    <h2 id="etiquetas-formateo">Etiquetas de Formateo</h2>
     <p>
       <pre>
         Tareas por hacer 
@@ -87,8 +123,9 @@
         </code>
       </pre>
     </p>
+    <a href="index.html#inicio">☝️</a>
     <hr />
-    <h2>Etiquetas Semánticas Estructurales</h2>
+    <h2 id="etiquetas-semanticas">Etiquetas Semánticas Estructurales</h2>
     <div>Es una etiqueta contenedora que no tiene semántica</div>
     <main>
     Main - define la sección principal del documento, solo puede existir una etuqueta main por documento
@@ -99,6 +136,366 @@
     <aside>aside - representa contenido complementario o secundario</aside>
     <section>section - representa una sección de contenido genérico</section>
     <address>address - representa una dirección</address>
+    <a href="index.html#inicio">☝️</a>
+  <hr>
+  <h2 id="etiquetas-bloque-linea">Etiquetas de Bloque VS Etiquetas de Línea</h2>
+  <div style="background-color: yellow;color: red;">La etiqueta de bloque por excelencia es la div, una etiqueta de bloque es aquella que genera saltos de linea con sus etiquetas hermanas (salto de linea tanto arriba como abajo) </div>
+  <span style="background-color:green ;">La etiqueta de linea por excelencia es la span (generico en linea, sin carga semántica) una etiqueta de línea sólo ocupa el espacio necesario que tiene su contenido</span>
+  <br>
+  <span>Hola, soy otra span</span>
+  <br>
+  <a href="index.html#inicio">☝️</a>
+  <hr>
+  <h2 id="estilos-css">Estilos CSS en HTML</h2>
+  <a href="index.html#inicio">☝️</a>
+  <hr>
+  <h2 id="script-html">Scripts en HTML</h2>
+  <a href="index.html#inicio">☝️</a>
+  <hr>
+  <h2 id="imagenes">Imágenes</h2>
+  <img src="img/9mk1bspouic01.png" alt="Evangelion">
+  <img src="img/subaru_road-wallpaper-2560x1440.jpg" alt="Subaru puesta del sol">
+  <img src="img/giphy.gif" alt="Meme mono">
+  <img src="img/absolut-vodka.svg" alt="absolut-vodka">
+  <a href="index.html#inicio">☝️</a>
+  <hr>
+  <h2 id="svg">SVG</h2>
+  <img src="img/car-svgrepo-com.svg" alt="Autito">
+  <svg
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7ZM9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12Z"
+    fill="currentColor"
+  />
+  <path
+    d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
+    fill="currentColor"
+  />
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M5 1C2.79086 1 1 2.79086 1 5V19C1 21.2091 2.79086 23 5 23H19C21.2091 23 23 21.2091 23 19V5C23 2.79086 21.2091 1 19 1H5ZM19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3Z"
+    fill="currentColor"
+  />
+</svg>
+<br>
+<a href="index.html#inicio">☝️</a>
+<hr>
+<h2 id="figuras">Figuras</h2>
+<figure>
+  <img src="img/9mk1bspouic01.png" alt="Evangelion">
+  <figcaption>Evangelion</figcaption>
+</figure>
+<a href="index.html#inicio">☝️</a>
+<hr>
+<h2 id="listas-ordenadas">Listas Ordenadas</h2>
+<h3>Las Estaciones del año</h3>
+<ol>
+  <li>Primavera</li>
+  <li>Verano</li>
+  <li>Otoño</li>
+  <li>Invierno</li>
+</ol>
+<ol start="3">
+  <li>Primavera</li>
+  <li>Verano</li>
+  <li>Otoño</li>
+  <li>Invierno</li>
+</ol>
+<ol reversed>
+  <li>Primavera</li>
+  <li>Verano</li>
+  <li>Otoño</li>
+  <li>Invierno</li>
+</ol>
+<ol type="A">
+  <li>Primavera</li>
+  <li>Verano</li>
+  <li>Otoño</li>
+  <li>Invierno</li>
+</ol>
+<a href="index.html#inicio">☝️</a>
+<hr>
+<h2 id="listas-desordenadas">Listas Desordenadas</h2>
+<h3>Cosas por hacer</h3>
+<ul type="disc">
+  <li>Terminar de grabar los fragmentos del curso de HTML</li>
+  <li>Editar el video de Youtube</li>
+  <li>Subirlo a Youtube</li>
+</ul>
+<ul type="circle">
+  <li>Terminar de grabar los fragmentos del curso de HTML</li>
+  <li>Editar el video de Youtube</li>
+  <li>Subirlo a Youtube</li>
+</ul>
+<ul type="square">
+  <li>Terminar de grabar los fragmentos del curso de HTML</li>
+  <li>Editar el video de Youtube</li>
+  <li>Subirlo a Youtube</li>
+</ul>
+<a href="index.html#inicio">☝️</a>
+<hr>
+<h2 id="listas-definicion">Listas de Definicion</h2>
+<dl>
+  <dt>HTML</dt>
+  <dd>Es un lenguaje de marcado que define el contenido de la web</dd>
+  <dt>CSS</dt>
+  <dd>Es un lenguaje de definicion que da estilos al codigo HTML</dd>
+  <dt>JavaScript</dt>
+  <dd>Es el lenguaje de la Web</dd>
+</dl>
+<a href="index.html#inicio">☝️</a>
+<hr>
+<h2 id="tablas">Tablas</h2>
+<table>
+  <!-- tr es table road, que es fila -->
+  <tr>
+    <td>Nombre</td>
+    <td>Constelación</td>
+    <td>Tipo</td>
+  </tr>
+  <tr>
+    <td>Ikki</td>
+    <td>Fénix</td>
+    <td>Bronce</td>
+  </tr>
+    <tr>
+    <td>Shaina</td>
+    <td>Ofiuco</td>
+    <td>Plata</td>
+  </tr>
+    <tr>
+    <td>Saga</td>
+    <td>Géminis</td>
+    <td>Dorado</td>
+  </tr>
+</table>
+<br><br><br>
+<table>
+  <thead>
+    <th colspan="3">Tabla de los Santos de Athena</th>
+    <tr>
+      <th>Nombre</th>
+      <th>Constelación</th>
+      <th>Tipo</th>
+    </tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>Ikki</td>
+    <td>Fénix</td>
+    <td>Bronce</td>
+  </tr>
+    <tr>
+    <td>Mistry</td>
+    <td>Lagarto</td>
+    <td>Plata</td>
+  </tr>
+    <tr>
+    <td>Saga</td>
+    <td>Géminis</td>
+    <td>Dorado</td>
+  </tr>
+      <tr>
+    <td>Shaina</td>
+    <td rowspan="2">Ofiuco</td>
+    <td>Plata</td>
+  </tr>
+  </tr>
+      <tr>
+    <td>Odiseo</td>
+    <td>Dorado</td>
+  </tr>
+  
+  </tbody>
+  <tfoot>
+    <tr>
+      <th colspan="3"><small> Seiya fue creado por Masami Kurumada </small>
+      </th>
+    </tr>
+  </tfoot>
+</table>
+<a href="index.html#inicio">☝️</a>
+<hr>
+<h2 id="enlaces">Enlaces</h2>
+<a href="hola.html">Hacia la página HTML</a>
+<br>
+<a href="https://jonmircha.com" target="_blank" rel="nofollow">Visita el sitio web jonmircha.com</a>
+<br>
+<a href="https://jonmircha.com/cursos" target="_blank"><img src="img/car-svgrepo-com.svg" alt="Ir haceia los cursos en Jonmircha.com" width="40" height="40"></a>
+<a href="https://youtube.com/jonmircha" target="_blank">
+  <svg
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M12 7C9.23858 7 7 9.23858 7 12C7 14.7614 9.23858 17 12 17C14.7614 17 17 14.7614 17 12C17 9.23858 14.7614 7 12 7ZM9 12C9 13.6569 10.3431 15 12 15C13.6569 15 15 13.6569 15 12C15 10.3431 13.6569 9 12 9C10.3431 9 9 10.3431 9 12Z"
+    fill="currentColor"
+  />
+  <path
+    d="M18 5C17.4477 5 17 5.44772 17 6C17 6.55228 17.4477 7 18 7C18.5523 7 19 6.55228 19 6C19 5.44772 18.5523 5 18 5Z"
+    fill="currentColor"
+  />
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M5 1C2.79086 1 1 2.79086 1 5V19C1 21.2091 2.79086 23 5 23H19C21.2091 23 23 21.2091 23 19V5C23 2.79086 21.2091 1 19 1H5ZM19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3Z"
+    fill="currentColor"
+  />
+</svg>
+<br>
+<a href="aguml26@gmail.com">Enlace a correo electrónico</a>
+<br>
+<a href="tel:5493584248170">Enlace a teléfono</a>
+<br>
+<a href="https://api.whatsapp.com/send?phone=9543584248170&text=Hola" target="_blank">Enlace hacia WhatsApp</a>
+<br>
+<a href="index.html#inicio">☝️</a>
+<hr>
+<h2 id="elementos-interactivos">Elementos Interactivos</h2>
+<button onclick="alert('Hola haz clickeado el botón')">Este es un botón</button>
+<details>
+  <summary>Título del Acordeón</summary>
+  <article>
+    <h3>Contenido del Acordeón</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quae quasi ratione maiores? Rerum in non officiis neque ab accusamus quis, aperiam, quam facilis odit dolore culpa. Nihil, quod minus!</p>
+    <img src="img/subaru_road-wallpaper-2560x1440.jpg" alt="Subaru en el atardecer">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ex nisi expedita animi. Praesentium porro earum vitae magni explicabo quaerat! At minima minus illum dolorem animi consequuntur repellat dolore? Maxime?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi provident incidunt modi voluptatem consequatur a nemo dignissimos, numquam facilis, aut nam autem magni recusandae, ex magnam commodi laboriosam possimus! Quibusdam.</p>
+  </article>
+</details>
+<br>
+<br>
+<details open>
+  <summary>Título del Acordeón</summary>
+  <article>
+    <h3>Contenido del Acordeón</h3>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quae quasi ratione maiores? Rerum in non officiis neque ab accusamus quis, aperiam, quam facilis odit dolore culpa. Nihil, quod minus!</p>
+    <img src="img/9mk1bspouic01.png" alt="Evangelion">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore ex nisi expedita animi. Praesentium porro earum vitae magni explicabo quaerat! At minima minus illum dolorem animi consequuntur repellat dolore? Maxime?</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi provident incidunt modi voluptatem consequatur a nemo dignissimos, numquam facilis, aut nam autem magni recusandae, ex magnam commodi laboriosam possimus! Quibusdam.</p>
+  </article>
+</details>
+  <dialog open="">
+    Esto es una ventana modal en HTML
+  </dialog>
+<br><br><br><br><br>
+<a href="index.html#inicio">☝️</a>
+<hr>
+<h2 id="audio-video">Audio y Video</h2>
+<audio src="media/Gorillaz - Clint Eastwood (Official Video).mp3" controls preload>Clint Eastwood - Gorillaz</audio>
+<br><br>
+<video src="media/league-of-legends-08-29-2022-23-41-43-807_RYYlkN1B.mp4" controls preload poster="img/1366_2000.jpeg"></video>
 
-  </body>
+<br>
+<a href="index.html#inicio">☝️</a>
+<br>
+<h2 id="iframes">Iframes</h2>
+<iframe src="hola.html" frameborder="1"></iframe>
+<br>
+<iframe src="https://jonmircha.com" frameborder="1"></iframe>
+<br>
+<iframe src="media/keyboard-shortcuts-windows.pdf" frameborder="2"></iframe>
+<br>
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1702.2370144074541!2d-64.18699443340302!3d-31.428614482423015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432a28ddf861391%3A0xc0fdcfc930551a76!2sPlaza%20Espa%C3%B1a%2C%20C%C3%B3rdoba%2C%20Argentina!5e0!3m2!1ses-419!2sar!4v1668109833928!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<br>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/BpO5bZEzVzI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
+<a href="index.html#inicio">☝️</a>
+<hr>
+<h2 id="formularios">Formularios</h2>
+<h3>Elementos de Formularios</h3>
+<input type="text">
+<br><br>
+<input type="checkbox" name="" id="">
+<br><br>
+<input type="radio" name="" id="">
+<br><br>
+<input type="date" name="" id="">
+<br><br>
+<input type="color" name="" id="">
+<br><br>
+<input type="button" value="Botón">
+<br><br>
+<input type="submit" value="Enviar">
+<br><br>
+<input type="reset" value="Resetear">
+<br><br>
+<input type="file">
+<br><br>
+<input type="file" multiple>
+<br><br>
+<input type="hidden" name= "idioma" value="es">
+<br><br>
+<input type="email">
+<br><br>
+<input type="number">
+<br><br>
+<input type="tel">
+<br><br>
+<input type="password" name="" id="">
+<br><br>
+<input type="search" name="" id="">
+<br><br>
+<textarea name="" id="" cols="70" rows="10"></textarea>
+<br><br>
+<select name="" id="">
+  <option value="">HTML</option>
+  <option value="">CSS</option>
+  <option value="">JS</option>
+  <option value="">PHP</option>
+  <option value="">Phyton</option>
+</select>
+<br>
+<select name="" id=""multiple>
+  <option value="">HTML</option>
+  <option value="">CSS</option>
+  <option value="">JS</option>
+  <option value="">PHP</option>
+  <option value="">Phyton</option>
+</select>
+<br><br>
+<input type="text" value="jonmircha" readonly disabled >
+<br><br>
+<input type="text" placeholder="Escribe tu Nombre">
+<br><br>
+<h3>Ejemplos de Formularios</h3>
+<h4>Formulario de Login</h4>
+<form action="http://jonmircha.com/" target="_blank" method="post">
+  <label for="usuario">Usuario:</label>
+  <input type="text" name="usuario" id="usuario" placeholder="Usuario" pattern="^[A-Za-z]+$" title="El campo solo acepta letras" required>
+  <br>
+  <label for="email">Email:</label>
+  <input type="email" name="email" id="email" placeholder="ejemplo@gmail.com">
+  <br>
+  <label for="password">Password:</label>
+  <input type="password" name="password" id="password" placeholder="Password" required>
+  <br>
+    <input type="submit" value="Enviar">
+    <br>
+    <input type="reset" value="Resetear">
+  <br><br>
+</form>
+
+<a href="index.html#inicio">☝️</a>
+<br><br>
+<hr>
+    <!-- El script siempre va al final del codigo  -->
+  <script>
+  console.log("hola, estamos aprendiendo HTML")
+  </script>
+  <script src="assets/codigos.js"></script>
+</body>
 </html>
